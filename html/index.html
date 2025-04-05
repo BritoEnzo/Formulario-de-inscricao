@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Formulário de Inscrição</h1>
+        <h2>Preencha os dados abaixo:</h2>
+
+        <form action="#" method="post">
+            <div class="bloco">
+                <div class="caixadetexto">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+                </div>
+                <div class="data">
+                    <input type="date" name="data_nascimento" id="data_nascimento" required><br>
+                </div>
+                <div class="container">
+                    <div class="gentext">
+                        <label for="masculino">Masculino</label>
+                        <label for="feminino">Feminino</label>
+                        <label for="outro">Outro</label>
+                    </div>
+                    <div class="gen">
+                        <input type="radio" name="genero" id="masculino" value="masculino">
+                        <input type="radio" name="genero" id="feminino" value="feminino">
+                        <input type="radio" name="genero" id="outro" value="outro">
+                    </div>
+                </div>
+                <div class="textolongo">
+                    <textarea placeholder="Digite sua mensagem" minlength="50" maxlength="200" required></textarea><br>
+                </div>
+                <div class="inscricao">
+                    <select name="tipo_inscricao" id="inscricao" required>
+                        <option value="palestrante">Palestrante</option>
+                        <option value="participante">Participante</option>
+                        <option value="voluntario">Voluntário</option>
+                    </select>
+                </div>
+                <div class="cadastrarlimpar">
+                    <input type="submit" value="Cadastrar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

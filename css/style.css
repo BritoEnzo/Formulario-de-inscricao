@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('/imgs/bkgd.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.caixadetexto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gentext {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gen {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.textolongo {
+    display: flex;
+    justify-content: center;
+}
+
+.inscricao {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrarlimpar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 1.1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+input[type="reset"]:hover {
+    background-color: #dc3545;
+}
+
+input[type="submit"]:active, input[type="reset"]:active {
+    transform: scale(0.98);
+}
+
+select {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+h1, h2 {
+    color: #444;
+}
